@@ -4,10 +4,6 @@ Exemplo 2: Economia de custo — escolha a prioridade por tarefa.
 Tarefas simples usam modelo barato; tarefas complexas usam o melhor.
 Voce nao paga por qualidade que nao precisa.
 """
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 from flexconnect import FlexConnect
 
 fc = FlexConnect()

@@ -1,11 +1,7 @@
 """
 Exemplo 3: FlexConnect Pro — cache (custo zero em repeticoes) + streaming.
 """
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from flexconnect_pro import FlexConnectPro
+from flexconnect import FlexConnectPro
 
 fc = FlexConnectPro(cache_ttl=3600, rate_limit_rpm=60)
 

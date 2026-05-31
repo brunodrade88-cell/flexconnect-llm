@@ -1,5 +1,14 @@
 # FlexConnect 🔌
 
+[![PyPI](https://img.shields.io/pypi/v/flexconnect-llm)](https://pypi.org/project/flexconnect-llm/)
+
+## Instalação
+
+```bash
+pip install flexconnect-llm
+```
+
+
 **Um cliente, todos os LLMs.** Roteamento inteligente por intenção, fallback automático e tracking de custo embutido.
 
 ## Por que FlexConnect?

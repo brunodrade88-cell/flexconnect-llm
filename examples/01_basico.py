@@ -1,10 +1,6 @@
 """
 Exemplo 1: Uso basico — uma pergunta, melhor modelo automatico.
 """
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 from flexconnect import FlexConnect
 
 fc = FlexConnect()
