@@ -44,9 +44,16 @@ class Modelo:
 
 
 CATALOGO = [
-    Modelo("gemini-flash", "google", "gemini-2.5-flash", 0.0, 0.0, 5, 3),
-    Modelo("gpt-4o-mini", "openai", "gpt-4o-mini", 0.00015, 0.0006, 5, 3),
-    Modelo("gpt-4o", "openai", "gpt-4o", 0.0025, 0.01, 3, 5),
+    # Modelos atuais (2026) — custo por 1k tokens em USD (input, output)
+    # Baratos/rapidos
+    Modelo("gemini-2.5-flash", "google", "gemini-2.5-flash", 0.00015, 0.0006, 5, 4),
+    Modelo("gemini-3-flash", "google", "gemini-3-flash", 0.0003, 0.0012, 5, 4),
+    Modelo("gpt-5-nano", "openai", "gpt-5-nano", 0.00005, 0.0004, 5, 3),
+    # Qualidade alta
+    Modelo("gemini-3-pro", "google", "gemini-3-pro", 0.002, 0.012, 3, 5),
+    Modelo("gpt-5.5", "openai", "gpt-5.5", 0.00175, 0.014, 3, 5),
+    Modelo("claude-opus-4.8", "openrouter", "anthropic/claude-opus-4.8", 0.005, 0.025, 3, 5),
+    # Open source / flat
     Modelo("llama-70b", "together", "meta-llama/Llama-3.3-70B-Instruct-Turbo", 0.00088, 0.00088, 4, 4),
 ]
 

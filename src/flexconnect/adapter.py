@@ -17,13 +17,17 @@ _cliente = None
 
 
 def contratar(tarefa, prompt, agente_id=None, tipo_tarefa="pergunta",
-              prioridade="balanceado", max_tokens=1000):
-    """Interface compativel com mercado_agentes.contratar()."""
+              prioridade="balanceado", max_tokens=1000, system=""):
+    """Interface compativel com mercado_agentes.contratar().
+
+    system: mensagem de sistema opcional (concatenada ao prompt).
+    """
     global _cliente
     if _cliente is None:
         _cliente = FlexConnect()
     priority = _PRIORIDADE_MAP.get(prioridade, "balanced")
-    r = _cliente.ask(prompt, priority=priority, max_tokens=max_tokens)
+    prompt_final = f"{system}\n\n{prompt}" if system else prompt
+    r = _cliente.ask(prompt_final, priority=priority, max_tokens=max_tokens)
     return {
         "sucesso": r.sucesso,
         "resposta": r.texto,
