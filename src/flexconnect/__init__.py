@@ -13,7 +13,7 @@ from .core import FlexConnect, Resposta, Modelo, rotear, CATALOGO
 from .pro import FlexConnectPro, CacheRespostas, RateLimiter
 from .adapter import contratar
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __all__ = [
     "FlexConnect", "FlexConnectPro", "Resposta", "Modelo",
     "rotear", "CATALOGO", "CacheRespostas", "RateLimiter", "contratar",

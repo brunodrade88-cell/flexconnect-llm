@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "flexconnect-llm"
-version = "0.1.0"
+version = "0.2.0"
 description = "Um cliente, todos os LLMs. Roteamento por intencao, fallback automatico e tracking de custo."
 readme = "README.md"
 requires-python = ">=3.9"
